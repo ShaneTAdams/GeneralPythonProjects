@@ -5,7 +5,7 @@ app = Flask(__name__)  # Dunder is short for double underscore.
 
 @app.route('/')  # a route is something that maps a URL path to a function.
 def home():
-    return "Hello World!"
+    return render_template('home.html')
 
 
 if __name__ == '__main__':
